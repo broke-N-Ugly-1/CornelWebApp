@@ -1,0 +1,97 @@
+body {
+    text-align: center;
+}
+
+.name {
+    position: fixed;
+    left: 17%;
+    top: 37%;
+}
+
+.name div{
+    display: inline-block;
+    font-size: 10em;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    padding-right: 10px;
+}
+
+#c {
+    background-color: red;
+    animation-name: cAnim;
+}
+
+#o {
+    background-color: orange;
+    animation-name: oAnim;
+}
+
+#r {
+    background-color: yellow;
+    animation-name: rAnim;
+}
+
+#space{
+    color: green;
+    animation-name: spaceAnim;
+}
+
+#n {
+    background-color: blue;
+    animation-name: nAnim;
+    animation-duration: 2s;
+    animation-direction: normal;
+}
+
+#e {
+    background-color: indigo;
+    animation-name: eAnim;
+}
+
+#l {
+    background-color: violet;
+    animation-name: lAnim;
+}
+
+/*translation and rotations*/
+@keyframes cAnim {
+    50%{transform: rotateY(360deg);}
+    100%{transform: translateX(-100%);}
+}
+
+@keyframes lAnim {
+    50%{transform: rotateY(360deg);}
+    100%{transform: translateX(100%);}
+}
+
+/*
+  Rotations 
+z-axis rotation*/
+@keyframes spaceAnim {
+    50%{transform: rotateY(180deg)}
+    100%{transform: rotateX(180deg)}
+}
+
+/*x-axis rotations*/
+@keyframes rAnim {
+    50%{transform: rotateX(360deg);}
+    to{transform: translateX(150%)}
+}
+
+@keyframes nAnim {
+    50%{transform: rotateX(720deg);}
+    to{transform: translateX(-150%)}
+}
+
+/*translations
+    up movement
+*/
+@keyframes oAnim {
+    100%{transform: translateY(-100%);}
+}
+
+@keyframes eAnim {
+    100%{transform: translateY(100%);}
+}
+
+
